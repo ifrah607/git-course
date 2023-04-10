@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empty - Remove</title>
+    <script src="jquery.js"></script>
+    <style>
+     #div1{
+         border: 3px ridge black;
+         background-color:chocolate;
+         width:300px;
+         height:300px;
+     }
+    </style>
+</head>
+<body>
+    <div id="div1">
+
+      <h1>This is my Heading</h1>
+      <p>This is my new Paragraph</p>
+
+    </div>
+    <br>
+    <input type="button" value="Empty" id="btn1">
+    
+    <script>
+        $(document).ready(function(){
+           $("#btn1").click(function(){
+            $("#div1").empty();
+           });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Drop Down List</title>
+<script src="jquery.js"></script>
+</head>
+
+<body>
+  <select id="list">
+   <option value="-1">Select Country</option>
+   <option value="Pakistan">Pakistan</option>
+   <option value="India">India</option>
+   <option value="Afghanistan">Afghanistan</option>
+  </select>
+  <input type="button" value="Submit" id="btn1" />
+  
+  <h1 id="head1"></h1>
+  
+  <script>
+     $(document).ready(function() {
+       
+	   
+	   $("#btn1").click(function(){
+	    var item = $("#list").val();
+		
+		
+		if(item==-1){
+			
+			alert("Please Select an Item..");
+			
+			}
+			else{
+				$("#head1").text("Your Selected Country is " + item);
+				
+				}
+	   });
+    });
+  
+  
+  
+  
+  </script>
+  
+  
+  
+</body>
+</html>
